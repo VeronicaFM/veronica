@@ -47,10 +47,8 @@ transition: "all 0.3",
 
 
 $("#" + $dataName1).css({  
-    height:"-webkit-min-content",
-    height:"-moz-min-content",
-    height:"min-content",
-    transition: "all 0.6s"
+    height:"auto",
+    transition: "all 0.6s",
 });
     
     
@@ -89,19 +87,81 @@ $('h1').click(function(){
 
 };
 
+
+
+
 var myIndex = 0;
+var y = document.getElementsByClassName("mySlidesText");
 carousel();
+var inter= 500
+ var set = setInterval(carousel, inter);
 
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
+    
     for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
+       x[i].style.display = "none"; 
+        
+       y[i].style.display = "none";    
     }
+    
     myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 250); 
+    
+    if (myIndex > x.length) {myIndex = 1}
+    
+ x[myIndex-1].style.display = "block"; 
+
+}
+
+//MOBILE mySlidesText CLICK STUFF 
+if ($(window).width() < 480) {
+    $("#container2").on('click', function(){
+
+        if ( $(y[myIndex-1]).css('display') == 'none' ){
+        
+            $(y[myIndex-1]).fadeIn();
+            console.log(y[myIndex-1]);
+            clearInterval(set);  
+            }else{
+                $(y[myIndex-1]).fadeOut();
+                clearInterval(set);
+                set = setInterval(carousel, inter)
+        }
+    
+  
+    
+        });
+}
+
+
+
+
+//DESKTOP mySlidesText CLICK HOVER STUFF
+if ($(window).width() >= 480) {
+    $("#container2").on('mouseenter click', function(){
+
+        if ( $(y[myIndex-1]).css('display') == 'none' ){
+        
+            $(y[myIndex-1]).fadeIn();
+            console.log(y[myIndex-1]);
+            clearInterval(set);  
+            }else{
+                $(y[myIndex-1]).fadeOut();
+                clearInterval(set);
+                set = setInterval(carousel, inter)
+        }
+    
+  
+    
+        });
+        
+        $("#container2").on('mouseleave', function(){
+        $(y[myIndex-1]).fadeOut();
+            clearInterval(set);
+            set = setInterval(carousel, inter)
+        });
+
 }
 
                        

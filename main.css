@@ -215,7 +215,7 @@ display: none;
 }
 .projContent{
     max-width:40vw;
-    max-height:57vh;
+    max-height:58vh;
     overflow: scroll;
     -webkit-transition: all ease-in-out 200ms;
     -o-transition: all ease-in-out 200ms;
@@ -328,6 +328,44 @@ display: none;
     margin:0 auto;
 
 }
+
+
+/* container div for text description in my slides... had issues with centering */
+.mySlidesTextContainer{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    height:100vh;
+    width: 50vw;
+    position: absolute;
+    -webkit-box-pack: center;
+    
+        -ms-flex-pack: center;
+    
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+}
+/* myslides text popup thing */
+.mySlidesText{
+    font-family: 'Helvetica', arial, sans-serif;
+    position: absolute;
+    width:30vw;
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+    
+    color: black;
+    background-color: white;
+     border:1px solid #ff6000;
+    opacity: 0.9;
+    padding: 0.5em;
+    z-index: 1;
+}
+
+
 
 footer {bottom:0;
 position:fixed;
