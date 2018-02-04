@@ -310,10 +310,10 @@ display: none;
         }
 
 
-#+work{
+#more{
     overflow:!important hidden;
 }
-#+workSection{
+#moreSection{
     overflow-y:!important hidden;
     
     
