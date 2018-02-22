@@ -360,7 +360,7 @@ display: none;
     color: black;
     background-color: white;
      border:1px solid #ff6000;
-    opacity: 0.5;
+    opacity: 0.9;
     padding: 0.5em;
     z-index: 1;
 }
