@@ -93,7 +93,7 @@ $('h1').click(function(){
 var myIndex = 0;
 var y = document.getElementsByClassName("mySlidesText");
 carousel();
-var inter= 300
+var inter= 100
  var set = setInterval(carousel, inter);
 
 function carousel() {
