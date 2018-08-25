@@ -178,8 +178,8 @@ h4{ color:#ff6000;font-weight:100;}
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding:1em;
-    width:95%;
+    padding:2%;
+    width:96%;
     max-height: 100vh;
     min-height:100%;
     top:0;
