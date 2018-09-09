@@ -18,7 +18,7 @@ body {
 
 
 
-p{font-family:'Karla', arial, sans-serif;
+p{font-family:'Karla', Helevtica, sans-serif;
 font-weight: 100;
 font-size:0.8em;}
 
@@ -50,7 +50,7 @@ font-size:0.8em;}
      h1 {
             max-width:45vw;
             font-size: 7vw;
-            font-family: 'Lato', arial;
+            font-family: 'Lato', Helevtica;
             color: rgb(255, 255, 255);
             text-shadow: 0px 20px 15.52px rgba(7, 26, 1, 0.05);
             line-height:8vw;
@@ -72,7 +72,7 @@ h1:hover{
     #menu>a{
             padding-left:0.5em;
             padding-top:0.1em;
-            font-family:'Lato', arial, sans-serif;
+            font-family:'Lato', Helevtica, sans-serif;
             font-size:6vw;
             color:#003c48;
             text-align: left;
@@ -92,7 +92,7 @@ h1:hover{
 }
 
 h2,h3,h4{
-    font-family: 'Lato', arial;
+    font-family: 'Lato', Helevtica;
 }
 
 h2{
@@ -350,7 +350,7 @@ display: none;
 }
 /* myslides text popup thing */
 .mySlidesText{
-    font-family: 'Lato', arial, sans-serif;
+    font-family: 'Lato', Helevtica, sans-serif;
     position: absolute;
     width:30vw;
         height: -webkit-min-content;
@@ -380,7 +380,7 @@ display:flex;
 
 footer>p{
     font-size:0.7em;
-    font-family:'Helevtica',arial, sans-serif;
+    font-family:'Karla',Helevtica, sans-serif;
     padding-right:1em;
     padding-left: 0.8em;
 }
